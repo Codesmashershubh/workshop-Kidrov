@@ -1,0 +1,239 @@
+.section {
+  background: var(--bg);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  gap: 64px;
+  align-items: start;
+}
+
+.infoCol {
+  padding-top: 8px;
+}
+
+.highlights {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.highlight span:first-child {
+  font-size: 18px;
+}
+
+/* Form Card */
+.formCard {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: var(--card-shadow);
+}
+
+.formTitle {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.alertError {
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  color: #c53030;
+  font-size: 14px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.2px;
+}
+
+.req {
+  color: var(--orange);
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  color: var(--text-primary);
+  background: var(--bg);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #b0bec5;
+}
+
+.input:focus {
+  border-color: var(--navy);
+  box-shadow: 0 0 0 3px rgba(13, 31, 60, 0.08);
+  background: var(--white);
+}
+
+.inputError {
+  border-color: #e53e3e;
+  background: #fff5f5;
+}
+
+.inputError:focus {
+  border-color: #e53e3e;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+}
+
+.errorMsg {
+  font-size: 12px;
+  color: #c53030;
+  font-weight: 500;
+}
+
+.phoneWrapper {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--bg);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.phoneWrapper:focus-within {
+  border-color: var(--navy);
+  box-shadow: 0 0 0 3px rgba(13, 31, 60, 0.08);
+  background: var(--white);
+}
+
+.phonePrefix {
+  padding: 12px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-right: 1.5px solid var(--border);
+  background: var(--bg);
+  flex-shrink: 0;
+}
+
+.phoneInput {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.phoneInput:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.submitBtn {
+  width: 100%;
+  justify-content: center;
+  padding: 14px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+/* Success */
+.successCard {
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 52px 40px;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+}
+
+.successIcon {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.successTitle {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.successMsg {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 960px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .formCard {
+    padding: 24px 20px;
+  }
+}
