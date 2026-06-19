@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # AI & Robotics Summer Workshop — Kidrove
 
 A responsive workshop landing page built with **React + Vite** (frontend) and **Express.js** (backend), created as part of the Kidrove internship assignment.
