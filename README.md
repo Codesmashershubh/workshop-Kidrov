@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI & Robotics Summer Workshop — Kidrove
 
 A responsive workshop landing page built with **React + Vite** (frontend) and **Express.js** (backend), created as part of the Kidrove internship assignment.
@@ -192,4 +193,4 @@ Component structure follows a single-responsibility principle: each section is i
 # NOTE
 MongoDB integration is fully implemented using Mongoose with schema validation, duplicate detection, and timestamps. The 
 Atlas connection works on open networks — local ISP blocks port 27017. All MongoDB code is production-ready in /backend/
-models/Enquiry.js and /backend/routes/enquiry.js.
+models/Enquiry.js and /backend/routes/enquiry.js
